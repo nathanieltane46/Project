@@ -37,37 +37,12 @@ slash-command forms above (OpenCode ships all six as slash commands).
 
 ## Deactivate
 
-Say "stop ponytail" or "normal mode". Resume anytime with `/ponytail`.
-`/ponytail off` also works.
-
-## Band (Claude Code)
-
-`/ponytail band` hides the band above the prompt, the same command brings it back.
-`/ponytail band on` and `/ponytail band off` set it directly. The level stays.
-`/ponytail band import` adds your past Claude Code sessions (cost, agent time, tokens) to the board.
-
-## Configure Default Mode
-
-Default mode = `full`, auto-active every session. Change it:
-
-**Environment variable** (highest priority):
-```bash
-export PONYTAIL_DEFAULT_MODE=ultra
-```
-
-**Config file** (`~/.config/ponytail/config.json`, Windows: `%APPDATA%\ponytail\config.json`):
-```json
-{ "defaultMode": "lite" }
-```
-
-Set `"off"` to disable auto-activation on session start, activate manually
-with `/ponytail` when wanted.
-
-Resolution: env var > config file > `full`.
+Always on through `CLAUDE.md`. Say "stop ponytail" or "normal mode" to pause it
+for the session. Resume anytime with `/ponytail`.
 
 ## Update
 
-In this repo, ponytail is vendored, not installed as a plugin: the skills live in `.claude/skills/`, the commands in `.claude/commands/`, and the rules in `CLAUDE.md`. To update, re-copy `skills/`, `commands/` and `AGENTS.md` (as `CLAUDE.md`) from https://github.com/DietrichGebert/ponytail. The hooks are not included, so the band and auto-activation at session start are not available here.
+In this repo, ponytail is vendored, not installed as a plugin: the skills live in `.claude/skills/` and the rules in `CLAUDE.md`. To update, re-copy `skills/` and `AGENTS.md` (as `CLAUDE.md`) from https://github.com/DietrichGebert/ponytail. The hooks are not included, so the band and the default-mode settings are not available here.
 
 ## More
 
