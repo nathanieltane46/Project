@@ -31,10 +31,6 @@ Level sticks until changed or session end.
 | **ponytail-gain** | `/ponytail-gain` | Measured-impact scoreboard: less code, less cost, more speed. |
 | **ponytail-help** | `/ponytail-help` | This card. |
 
-In Codex CLI and the IDE extension, invoke skills with `$ponytail:ponytail`,
-`$ponytail:ponytail-review`, or `$ponytail:ponytail-help`. Claude Code and OpenCode use the
-slash-command forms above (OpenCode ships all six as slash commands).
-
 ## Deactivate
 
 Always on through `CLAUDE.md`. Say "stop ponytail" or "normal mode" to pause it
